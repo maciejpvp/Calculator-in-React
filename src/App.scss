@@ -1,0 +1,70 @@
+$background-color: #1E1E1B;
+$background-calc: #181816;
+$text-color: #F0F0F0;
+$background-input: #dbdbdb;
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+button {
+    background-color: transparent;
+    border-color: $text-color;
+    color: $text-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+.titlebar {
+    margin-bottom: 10px;
+    padding-top: -0px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.MainCalc{
+    background-color: $background-calc;
+    padding: 20px;
+    padding-top: 5px;
+    margin-top: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255 ,50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.InputContainer{
+    background-color: $background-input;
+    color: $background-color;
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    width: 240px;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+    
+}
