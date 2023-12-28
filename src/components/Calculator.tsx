@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Draggable from 'react-draggable';
 import '.././App.scss';
 
-const CalcButton: React.FC = () => {
+const Calculator: React.FC = () => {
   const [input, setInput] = useState<string>('0');
 
   const handleButtonClick = (value: string) => {
@@ -22,7 +22,7 @@ const CalcButton: React.FC = () => {
   };
 
   const handleClear = () => {
-    setInput('');
+    setInput('0');
   };
 
   const handleKeyPress = (event: KeyboardEvent) => {
@@ -82,4 +82,4 @@ const CalcButton: React.FC = () => {
   );
 };
 
-export default CalcButton;
+export default Calculator;

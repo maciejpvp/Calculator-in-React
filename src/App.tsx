@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 import './App.scss';
-import CalcButton from './components/CalcButton';
+import Calculator from './components/Calculator';
 import Draggable from 'react-draggable';
 
 const App: FC = () => {
   return (
     <div className="App">
       <Draggable>
-        <CalcButton></CalcButton>
+        <Calculator></Calculator>
       </Draggable>
     </div>
   );
